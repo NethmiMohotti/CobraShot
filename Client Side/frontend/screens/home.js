@@ -111,7 +111,7 @@ export default function Home(){
     }
   }
 
-  // Receving Snake information from the bacend
+  // Receving Snake information from the backend
   async function getSnakeDetails(){
     try{
       let response = await fetch('https://i-freedom-310915.nw.r.appspot.com/bird');
@@ -151,8 +151,8 @@ export default function Home(){
               style = {styles.closeIcon}/>
 
               <View style={styles.buttonHolder}>
-                <FlatButton text="Upload Image" onPress={pickImage}></FlatButton>
-                <FlatButton text="Take Image" onPress={pickImage}></FlatButton>  
+                <FlatButton text="Upload Image" onPress={chooseImage}></FlatButton>
+                <FlatButton text="Take Image" onPress={takeImage}></FlatButton>  
               </View>
           </View>
         </ImageBackground>
