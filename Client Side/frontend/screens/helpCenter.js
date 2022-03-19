@@ -6,7 +6,7 @@ import { globalStyles } from '../styles/globalStyles';
 export default function helpCenter(){
     return(
 
-        <ImageBackground source={require('../assets/images/background.png')} style={globalStyles.bgImageContainer}>
+        <ImageBackground source={require('../assets/images/commonbg.png')} style={globalStyles.bgImageContainer}>
             <ScrollView>
             <View style={styles.view}>
                 <Text style = {styles.questionType}>General Questions</Text>
@@ -17,11 +17,15 @@ export default function helpCenter(){
                         within our database to find out what snake it is that you most likely encounted in the 
                         vicinity of where you saw the bird.
                     </Text>
+
                     <Text style = {styles.question}>How does CobraShot works?</Text>
                     <Text style = {styles.answer}>
                         CobraShot will present you with accurate information about the snakes you just saw, 
                         which has been gathered from reputable and well-known internet sources.
                     </Text>
+
+                    <Text style = {styles.question}>Do I need to have a Internet Connection?</Text>
+                    <Text style = {styles.answer}>Yes, you have to have a working internet connection to use CobraShot</Text>
 
             </View>
             </ScrollView>
@@ -33,12 +37,13 @@ const styles = StyleSheet.create({
     answer:{
         fontSize: 14,
         marginBottom: 10,
+        color: '#F1DFDF'
       },
       question:{
-        fontSize: 14,
+        fontSize: 16,
         fontWeight:'bold',
         marginBottom: 10,
-        color: '#E72D44',
+        color: '#FFFFFF',
         textDecorationLine: 'underline',
       }
       ,
@@ -46,7 +51,7 @@ const styles = StyleSheet.create({
         fontSize: 24,
         fontWeight:'bold',
         marginBottom: 20,
-        color: '#E72D44',
+        color: '#FFFFFF',
         textDecorationLine: 'underline',
       },
       view : {
