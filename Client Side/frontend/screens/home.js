@@ -138,7 +138,7 @@ export default function Home(){
       <Modal
       visible = { modalVisible }
       presentationStyle = 'pageSheet'
-      animationType="slide">
+      animationType = "slide">
         
         <ImageBackground source = {require('../assets/images/blacksnakebackground.png')} style = {styles.backGroundImage}>
           {/* Icon to close the Modal */}
@@ -208,7 +208,38 @@ const styles = StyleSheet.create({
       height: '100%'
     },
     modalContent: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: 40
       
+    },
+    closeIcon : {
+      position: 'absolute',
+      top: 20,
+      right: 20
+    },
+    buttonHolder : {
+      width : 300,
+      height : 300,
+      justifyContent: 'space-around',
+      alignItems : 'center'
+    },
+    snakeName: {
+      color: '#E72D44',
+      fontSize: 18
+    },
+    snakeSname: {
+      color: '#E72D44',
+      fontSize: 18,
+      textDecorationLine: 'underline',
+      fontStyle: 'italic',
+    },
+    snakeData: {
+      marginTop: 15,
+      color: '#E72D44',
+      fontSize: 18,
     }
+
 
   });
