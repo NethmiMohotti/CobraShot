@@ -140,7 +140,7 @@ export default function Home(){
       presentationStyle = 'pageSheet'
       animationType = "slide">
         
-        <ImageBackground source = {require('../assets/images/blacksnakebackground.png')} style = {styles.backGroundImage}>
+        <ImageBackground source = {require('../assets/images/commonbg.png')} style = {styles.backGroundImage}>
           {/* Icon to close the Modal */}
           <View style={styles.modalContent}>
             <Ionicons
