@@ -90,12 +90,15 @@ const styles = StyleSheet.create({
         margin: 30,
         fontSize: 14,
         color: '#EADEDE',
+        fontFamily: 'nunito-regular',
     },
     prfName: {
         fontSize: 14,
+        fontFamily: 'poppins-bold',
     },
     position: {
         fontSize: 12,
+        fontFamily: 'poppins-regular',
     }
 
     

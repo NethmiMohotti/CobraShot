@@ -37,7 +37,8 @@ const styles = StyleSheet.create({
     answer:{
         fontSize: 14,
         marginBottom: 10,
-        color: '#F1DFDF'
+        color: '#F1DFDF',
+        fontFamily: 'nunito-regular',
       },
       question:{
         fontSize: 16,
@@ -45,6 +46,7 @@ const styles = StyleSheet.create({
         marginBottom: 10,
         color: '#FFFFFF',
         textDecorationLine: 'underline',
+        fontFamily: 'nunito-regular',
       }
       ,
       questionType:{
@@ -53,6 +55,7 @@ const styles = StyleSheet.create({
         marginBottom: 20,
         color: '#FFFFFF',
         textDecorationLine: 'underline',
+        fontFamily: 'nunito-regular',
       },
       view : {
           padding: 20,

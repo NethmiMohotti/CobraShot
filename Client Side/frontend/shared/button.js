@@ -25,5 +25,6 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase',
         fontSize: 16,
         textAlign: 'center',
+        fontFamily: 'poppins-bold',
     }
 })

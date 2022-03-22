@@ -229,18 +229,21 @@ const styles = StyleSheet.create({
     },
     snakeName: {
       color: '#E72D44',
-      fontSize: 18
+      fontSize: 18,
+      fontFamily: 'poppins-bold',
     },
     snakeSname: {
       color: '#E72D44',
       fontSize: 18,
       textDecorationLine: 'underline',
       fontStyle: 'italic',
+      fontFamily: 'poppins-italic',
     },
     snakeData: {
       marginTop: 15,
       color: '#E72D44',
       fontSize: 18,
+      fontFamily: 'poppins-regular',
     }
 
 
