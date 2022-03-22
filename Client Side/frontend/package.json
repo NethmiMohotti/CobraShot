@@ -11,9 +11,12 @@
   },
   "dependencies": {
     "@expo/vector-icons": "^12.0.5",
-    "expo": "~44.0.0",
+    "app": "^0.1.0",
+    "expo": "^44.0.6",
     "expo-image-picker": "^12.0.2",
     "expo-status-bar": "~1.2.0",
+    "font": "0.0.4",
+    "loading": "^1.13.3",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-native": "0.64.3",
