@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     about: {
         margin: 30,
         fontSize: 14,
-        color: '#EADEDE'
+        color: '#EADEDE',
     },
     prfName: {
         fontSize: 14,

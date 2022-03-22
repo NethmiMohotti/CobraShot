@@ -3,7 +3,7 @@ import { StyleSheet, Text, View, ImageBackground, Modal, Image, StatusBar, Activ
 import FlatButton from '../shared/button';
 import { Ionicons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
-import Avatar from '../assets/images/snakeAvatar.png'
+import Avatar from '../assets/images/CobraLogo.png'
 
 export default function Home(){
 
@@ -168,6 +168,8 @@ export default function Home(){
           color="#E72D44"
           animating = { isAnimate }/>
       </View>
+
+      
       <FlatButton text= "Find Snake" onPress={handler}/>
 
     </ImageBackground>
@@ -186,7 +188,7 @@ const styles = StyleSheet.create({
     imageContainer: {
       width: 300,
       height: 300,
-      backgroundColor: '#fff',
+      backgroundColor: '#000000',
       borderRadius: 15,
       alignItems: 'center',
       justifyContent: 'center',
