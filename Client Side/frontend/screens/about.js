@@ -18,7 +18,7 @@ export default function About() {
 
                             <View style = {styles.profileContainer}>
                                 <Image source={require('../assets/images/Nethmi.png')} style = {styles.prfImg}/>
-                                <Text style = {styles.prfName}>Nethmi Mohottiarachchi</Text>
+                                <Text style = {styles.prfName}>Nethmi Mohotti</Text>
                                 <Text style = {styles.position}>Team Leader</Text>
                             </View>
 
