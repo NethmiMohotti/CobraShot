@@ -4,7 +4,7 @@ import { createDrawerNavigator, DrawerItems } from 'react-navigation-drawer';
 
 export default function CustomDrawer(props){
     return(
-        <ImageBackground source = {require('../assets/images/snake.png')} style={styles.bgContainer } >
+        <ImageBackground source = {require('../assets/images/drawerbg.jpg')} style={styles.bgContainer } >
             <SafeAreaView style={styles.container}>
                 <View style={styles.imageContainer}>
                     <Image  source={require('../assets/images/CobraLogo.png')} style={styles.logo}/>
