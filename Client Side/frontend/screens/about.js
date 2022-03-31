@@ -30,7 +30,7 @@ export default function About() {
 
                             <View style = {styles.profileContainer}>
                                 <Image source={require('../assets/images/sachiImg.jpg')} style = {styles.prfImg}/>
-                                <Text style = {styles.prfName}>Malaka</Text>
+                                <Text style = {styles.prfName}>Malaka Yasantha</Text>
                                 <Text style = {styles.position}>Team Member</Text>
                             </View>
 
