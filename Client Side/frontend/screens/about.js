@@ -17,8 +17,8 @@ export default function About() {
                         <ScrollView horizontal = {true}>
 
                             <View style = {styles.profileContainer}>
-                                <Image source={require('../assets/images/sachiImg.jpg')} style = {styles.prfImg}/>
-                                <Text style = {styles.prfName}>Nethmi Mohottiarachchi</Text>
+                                <Image source={require('../assets/images/Nethmi.png')} style = {styles.prfImg}/>
+                                <Text style = {styles.prfName}>Nethmi Mohotti</Text>
                                 <Text style = {styles.position}>Team Leader</Text>
                             </View>
 
