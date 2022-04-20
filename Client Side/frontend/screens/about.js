@@ -20,18 +20,21 @@ export default function About() {
                                 <Image source={require('../assets/images/Nethmi.png')} style = {styles.prfImg}/>
                                 <Text style = {styles.prfName}>Nethmi Mohotti</Text>
                                 <Text style = {styles.position}>Team Leader</Text>
+                                <Text style = {styles.position}>W1830188</Text>
                             </View>
 
                             <View style = {styles.profileContainer}>
                                 <Image source={require('../assets/images/sachiImg.jpg')} style = {styles.prfImg}/>
                                 <Text style = {styles.prfName}>Sachithra Malshan</Text>
                                 <Text style = {styles.position}>Team Member</Text>
+                                <Text style = {styles.position}>w1810004</Text>
                             </View>
 
                             <View style = {styles.profileContainer}>
-                                <Image source={require('../assets/images/sachiImg.jpg')} style = {styles.prfImg}/>
+                                <Image source={require('../assets/images/malaka.jpg')} style = {styles.prfImg}/>
                                 <Text style = {styles.prfName}>Malaka Yasantha</Text>
                                 <Text style = {styles.position}>Team Member</Text>
+                                <Text style = {styles.position}>w1830176</Text>
                             </View>
 
                             <View style = {styles.profileContainer}>
