@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { StyleSheet, Text, View, ImageBackground, Modal, Image, StatusBar, ActivityIndicator, Platform} from 'react-native';
+import { StyleSheet, Text, View, ImageBackground, Modal, Image, StatusBar, ActivityIndicator, Platform, ScrollView} from 'react-native';
 import FlatButton from '../shared/button';
 import { Ionicons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
@@ -29,6 +29,15 @@ export default function Home(){
 
   // Snake Location
   const [location, setLocation] = useState("Location ");
+
+  // Snake Taxonomy 
+  const [taxonomy, setTaxonomy] = useState("Taxonomy ")
+
+  // Snake Habitate
+  const [habitat, setHabitate] = useState("Habitat ")
+
+  // Snake remedies
+  const [remedies, setRemedies] = useState("Remedies ")
 
   // for Activity Indicator
   const [isLoaded, setIsLoaded] = useState(false);
@@ -93,16 +102,16 @@ export default function Home(){
   // Method to send the image uri as base64
   async function uploadImage(str){
     try{
-      await fetch('https://i-freedom-310915.nw.r.appspot.com/classification',{
-        method: 'POST',
-        headers: {
-          Accept: 'application/json',
-          'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-          image: str,
-        }),
-      });
+      // await fetch('https://i-freedom-310915.nw.r.appspot.com/classification',{
+      //   method: 'POST',
+      //   headers: {
+      //     Accept: 'application/json',
+      //     'Content-Type': 'application/json'
+      //   },
+      //   body: JSON.stringify({
+      //     image: str,
+      //   }),
+      // });
 
       getSnakeDetails();
 
@@ -114,14 +123,17 @@ export default function Home(){
   // Receving Snake information from the backend
   async function getSnakeDetails(){
     try{
-      let response = await fetch('https://i-freedom-310915.nw.r.appspot.com/bird');
-      let responseJSON = await response.json();
+      // let response = await fetch('https://i-freedom-310915.nw.r.appspot.com/bird');
+      // let responseJSON = await response.json();
 
-      setSnakeName(responseJSON.snake);
-      setSnakeSname(responseJSON.snakeSname);
-      setLocation(responseJSON.location);
+      setSnakeName("Blue Krait , Common Krait");
+      setSnakeSname("Bungarus caeruleus");
+      setLocation("From Sindh to West Bengal, throughout South India, and Sri Lanka, at elevations up to about 1,600 m (5,200 ft). Afghanistan, Bangladesh, and Nepal.");
+      setTaxonomy("Highly Venomous")
+      setHabitate("Fields and low scrub jungle to settled areas. It rests in termite mounds, brick piles, rat holes, and even inside houses. It is frequently encountered in water or in proximity to a water source")
+      setRemedies("Keep the victim calm, restrict movement.  Remove any rings or constricting items. Stop the lymphatic spread of venom. No water No food. Do not cover the bite area & puncture marks. The wound should be gently cleaned with antiseptic.  Rush to a hospital.")
       setIsLoaded(true);
-      console.log(responseJSON.snake);
+      // console.log(responseJSON.snake);
       setIsAnimate(false);
 
     }catch (err){
@@ -158,16 +170,25 @@ export default function Home(){
         </ImageBackground>
       </Modal>
 
+      
       <View style={styles.imageContainer}>
-        <Image source={{ uri: image}} style={{ width: 150, height: 112.5, justifyContent: 'center', alignItems: 'center', marginBottom: 20, borderRadius: 15 }}/>
-        <Text style={styles.snakeName}>{ snakeName }</Text>
-        <Text style={styles.snakeSname}>{ snakeSname }</Text>  
-        <Text style={styles.snakeData}>{ location }</Text>
+      <ScrollView>
+        <View style = {styles.imageCon}>
+          <Image source={{ uri: image}} style={{ width: 150, height: 112.5, justifyContent: 'center', alignItems: 'center', marginBottom: 20, borderRadius: 15 }}/>
+        </View>
+        <Text style={styles.snakeName}>   Name : { snakeName }</Text>
+        <Text style={styles.snakeSname}>  Scientific Name : { snakeSname }</Text>  
+        <Text style={styles.snakeData}>  Habitats : { habitat }</Text>
+        <Text style={styles.snakeData}>  Location : { location }</Text>
+        <Text style={styles.snakeData}>  Taxonomy : { taxonomy }</Text>
+        <Text style={styles.snakeData}>  Remedies : { remedies }</Text>
+      </ScrollView>
         <ActivityIndicator
           size="large"
           color="#E72D44"
           animating = { isAnimate }/>
       </View>
+      
 
       
       <FlatButton text= "Find Snake" onPress={handler}/>
@@ -244,6 +265,10 @@ const styles = StyleSheet.create({
       color: '#E72D44',
       fontSize: 18,
       fontFamily: 'poppins-regular',
+    },
+    imageCon : {
+      justifyContent: 'center',
+      alignItems: 'center',
     }
 
 
