@@ -38,14 +38,14 @@ export default function About() {
                             </View>
 
                             <View style = {styles.profileContainer}>
-                                <Image source={require('../assets/images/sewwandi.jpg')} style = {styles.prfImg}/>
+                                <Image source={require('../assets/images/sewwandi.png')} style = {styles.prfImg}/>
                                 <Text style = {styles.prfName}>Sewwandi Premarathna</Text>
                                 <Text style = {styles.position}>Team Member</Text>
                                 <Text style = {styles.position}>w1809975</Text>
                             </View>
 
                             <View style = {styles.profileContainer}>
-                                <Image source={require('../assets/images/theekshana.jpg')} style = {styles.prfImg}/>
+                                <Image source={require('../assets/images/theekshan.png')} style = {styles.prfImg}/>
                                 <Text style = {styles.prfName}>Thenuwan Theekshana</Text>
                                 <Text style = {styles.position}>Team Member</Text>
                                 <Text style = {styles.position}>w1838860</Text>
