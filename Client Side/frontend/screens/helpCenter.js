@@ -15,7 +15,7 @@ export default function helpCenter(){
                         CobraShot, a mobile application that ill give the user identification of a snake and how
                         to treat its poison.It can identify snakes by their snaps.It taps into thousand of records
                         within our database to find out what snake it is that you most likely encounted in the 
-                        vicinity of where you saw the bird.
+                        vicinity of where you saw the snake.
                     </Text>
 
                     <Text style = {styles.question}>How does CobraShot works?</Text>
