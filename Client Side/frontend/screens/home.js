@@ -4,6 +4,8 @@ import FlatButton from '../shared/button';
 import { Ionicons } from '@expo/vector-icons';
 import * as ImagePicker from 'expo-image-picker';
 import Avatar from '../assets/images/CobraLogo.png'
+//import { db } from "../../../Server-side/fireabase";
+//import { getDatabase, ref, onValue} from "firebase/database";
 
 export default function Home(){
 
@@ -125,6 +127,12 @@ export default function Home(){
     try{
       // let response = await fetch('https://i-freedom-310915.nw.r.appspot.com/bird');
       // let responseJSON = await response.json();
+      //function readData(){
+      //  const readSnakeName = '';
+      //  const starCountRef = ref(db, 'species information/' + readSnakeName);
+      //  onValue(starCountRef, (snapshot) => {
+      //      const data = snapshot.val();
+      //  });
 
       setSnakeName("Blue Krait , Common Krait");
       setSnakeSname("Bungarus caeruleus");
