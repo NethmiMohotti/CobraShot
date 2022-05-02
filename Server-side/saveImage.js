@@ -1,4 +1,4 @@
-import { firebase } from '../../Server-side/firebase';
+import { db } from './fireabase';
 import { getStorage, ref, uploadBytes} from 'firebase/storage';
 
 const strorage = getStorage(); //the storage
